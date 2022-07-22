@@ -1,0 +1,56 @@
+MYSQL
+
+Create table bankpass(userid   varchar(15)   NOT NULL,
+Pass  varchar(15) NOT NULL,
+Atmpin  integer(6) Primary Key);
+
+
+create table bankdata(Name varchar(30) not null,
+Acc_no  integer primary key,
+Branch varchar(30),
+Acopen_date date,
+Address varchar(100),
+Debit integer(20),
+Credit integer(20));
+
+
+create table bankdataac(Name varchar(30) NOT NULL ,
+Acc_no  integer,
+Debit integer(20),
+Debitdate date,
+DPlace varchar(30),
+credit integer(20),
+creditdate date,
+CPlace varchar(30),
+FOREIGN KEY (Acc_no) REFERENCES bankdata(Acc_no));
+
+
+
+
+
+
+
+
+Inputs
+Insert into bankdata values(“Yash Mathur”,11000,”Baner”,”2018-08-12”,”Balewadi high street”,10000,0);
+Insert into bankdata values(“Aman Kumar”,11001,”Wakad”,”2019-07-11”,”beside dmart”,15000,0);
+Insert into bankdata values(“Tasheen Qamar”,11002,”Baner”,”2017-04-02”,”near big bazar”,5000,0);
+Insert into bankdata values(“Ayushi Kumari”,11003,”Aundh”,”2017-03-22”,”westend mall road”,18000,0);
+
+
+
+update bankdata set Name="Yash Mathur" where Acc_no=11000;
+
+update bankdata set debit=debit-1000,credit=1000 where Acc_no=11000;
+
+
+Insert into bankdataac values(“Yash Mathur”,11000, 10000, ”2018-08-12”,”Baner”, 0,null,””);
+Insert into bankdataac values(“Aman Kumar”,11001, 15000, ”2019-07-11”,”Wakad”,0,null,””);
+Insert into bankdataac values(“Tasheen Qamar”,11002,5000,”2017-04-02” ,”Baner”,0,null,””);
+Insert into bankdataac values(“Ayushi Kumari”,11003, 18000,”2017-03-22” ,”Aundh”,0,null,””);
+Insert into bankdataac values(“Yash Mathur”,11000, 0,null ,””,1000,”2018-10-11”,”Aundh”);
+
+
+
+
+delete from bankdataac where Acc_no=11001;
