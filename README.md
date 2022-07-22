@@ -12,3 +12,6 @@ Step 2: Download Python ide and Mysql
 Step 3: Create database , tables and insert data from mysql data
 Step 4: install mysql- Python connector
 Step 5: Run final project python file 
+
+
+This Project is created by Yash Verma, Vikash Singh and Pranhav Vanarote
