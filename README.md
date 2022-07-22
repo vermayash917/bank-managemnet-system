@@ -4,3 +4,11 @@ In this project we have used Python and MYSQL . We have created seven(7) frames 
 
 This project is designed for The Bank Staffs to keep the record of their customers. Only authorized Users can have the accessibility to the program. User after Logging in have the support to display all records, and modify it accordingly. If someone is not having Login Id, password he/she could make a new id. Further it can also check overall record of a local customer or full detail of a single a/c as per transactions, create a new record for new customer, Update an old customer record, Delete a record of a customer and Update Loans of the customer.
 Python is used as Front End and MySQL is used as Back End.
+
+
+To RUN the project
+Step 1: Download all files
+Step 2: Download Python ide and Mysql
+Step 3: Create database , tables and insert data from mysql data
+Step 4: install mysql- Python connector
+Step 5: Run final project python file 
